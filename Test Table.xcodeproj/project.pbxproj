@@ -19,6 +19,9 @@
 		0A3CA21F193FB57B004A0F27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3CA207193FB57B004A0F27 /* UIKit.framework */; };
 		0A3CA227193FB57B004A0F27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A3CA225193FB57B004A0F27 /* InfoPlist.strings */; };
 		0A3CA229193FB57B004A0F27 /* Test_TableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CA228193FB57B004A0F27 /* Test_TableTests.m */; };
+		0A3CA234193FB5B2004A0F27 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3CA233193FB5B2004A0F27 /* MyTableViewController.m */; };
+		0A3CA236193FB7B1004A0F27 /* contacts.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0A3CA235193FB7B1004A0F27 /* contacts.txt */; };
+		0A798960194A80A60086CCA8 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A79895F194A80A60086CCA8 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,11 @@
 		0A3CA224193FB57B004A0F27 /* Test TableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test TableTests-Info.plist"; sourceTree = "<group>"; };
 		0A3CA226193FB57B004A0F27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A3CA228193FB57B004A0F27 /* Test_TableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test_TableTests.m; sourceTree = "<group>"; };
+		0A3CA232193FB5B2004A0F27 /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
+		0A3CA233193FB5B2004A0F27 /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
+		0A3CA235193FB7B1004A0F27 /* contacts.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = contacts.txt; sourceTree = "<group>"; };
+		0A79895E194A80A60086CCA8 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		0A79895F194A80A60086CCA8 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,8 @@
 		0A3CA1F7193FB57B004A0F27 = {
 			isa = PBXGroup;
 			children = (
+				0A79895E194A80A60086CCA8 /* Person.h */,
+				0A79895F194A80A60086CCA8 /* Person.m */,
 				0A3CA209193FB57B004A0F27 /* Test Table */,
 				0A3CA222193FB57B004A0F27 /* Test TableTests */,
 				0A3CA202193FB57B004A0F27 /* Frameworks */,
@@ -109,6 +119,8 @@
 			children = (
 				0A3CA212193FB57B004A0F27 /* AppDelegate.h */,
 				0A3CA213193FB57B004A0F27 /* AppDelegate.m */,
+				0A3CA232193FB5B2004A0F27 /* MyTableViewController.h */,
+				0A3CA233193FB5B2004A0F27 /* MyTableViewController.m */,
 				0A3CA215193FB57B004A0F27 /* Images.xcassets */,
 				0A3CA20A193FB57B004A0F27 /* Supporting Files */,
 			);
@@ -118,6 +130,7 @@
 		0A3CA20A193FB57B004A0F27 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0A3CA235193FB7B1004A0F27 /* contacts.txt */,
 				0A3CA20B193FB57B004A0F27 /* Test Table-Info.plist */,
 				0A3CA20C193FB57B004A0F27 /* InfoPlist.strings */,
 				0A3CA20F193FB57B004A0F27 /* main.m */,
@@ -221,6 +234,7 @@
 			files = (
 				0A3CA20E193FB57B004A0F27 /* InfoPlist.strings in Resources */,
 				0A3CA216193FB57B004A0F27 /* Images.xcassets in Resources */,
+				0A3CA236193FB7B1004A0F27 /* contacts.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +253,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3CA234193FB5B2004A0F27 /* MyTableViewController.m in Sources */,
 				0A3CA214193FB57B004A0F27 /* AppDelegate.m in Sources */,
+				0A798960194A80A60086CCA8 /* Person.m in Sources */,
 				0A3CA210193FB57B004A0F27 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,6 +453,7 @@
 				0A3CA22E193FB57B004A0F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A3CA22F193FB57B004A0F27 /* Build configuration list for PBXNativeTarget "Test TableTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +462,7 @@
 				0A3CA231193FB57B004A0F27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
